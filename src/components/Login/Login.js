@@ -34,7 +34,7 @@ const Login = (props) => {
   useEffect(()=>{  
     const identifier = setTimeout(()=>{
       console.log('Check form Validity')
-      setFormIsValid(emailIsValid,passwordIsValid);
+      setFormIsValid(emailIsValid && passwordIsValid);
     },500)
 
     return ()=>{
